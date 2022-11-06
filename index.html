@@ -25,39 +25,41 @@
             </ul>
         </header>
     </div>
-    <div class="row mx-4 mt-4 text-center">
-        <div class="col-md-4">
-          <div class="card border-primary">
-            <div class="card-body">
-              <h5 class="card-title">Estudiante</h5>
-              <p class="card-text">Tiene un descuento</p>
-              <h6 class="card-text">80%</h6>
-              <p class="text-secondary small">* presentar documentación</p>
+    <div class="container justify-content-center ancho">
+        <div class="row mt-4 text-center ">
+            <div class="col-12 col-md-4">
+            <div class="card border-primary">
+                <div class="card-body">
+                <h5 class="card-title">Estudiante</h5>
+                <p class="card-text">Tiene un descuento</p>
+                <h6 class="card-text">80%</h6>
+                <p class="text-secondary small">* presentar documentación</p>
+                </div>
             </div>
-          </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card border-success">
+                <div class="card-body">
+                    <h5 class="card-title">Trainee</h5>
+                    <p class="card-text">Tiene un descuento</p>
+                    <h6 class="card-text">50%</h6>
+                    <p class="text-secondary small">* presentar documentación</p>
+                </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card border-warning">
+                <div class="card-body">
+                    <h5 class="card-title">Junior</h5>
+                    <p class="card-text">Tiene un descuento</p>
+                    <h6 class="card-text">15%</h6>
+                    <p class="text-secondary small">* presentar documentación</p>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4">
-            <div class="card border-success">
-              <div class="card-body">
-                <h5 class="card-title">Trainee</h5>
-                <p class="card-text">Tiene un descuento</p>
-                <h6 class="card-text">50%</h6>
-                <p class="text-secondary small">* presentar documentación</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="card border-warning">
-              <div class="card-body">
-                <h5 class="card-title">Junior</h5>
-                <p class="card-text">Tiene un descuento</p>
-                <h6 class="card-text">15%</h6>
-                <p class="text-secondary small">* presentar documentación</p>
-              </div>
-            </div>
-          </div>
-    </div>
-    <div class="ticket text-center mt-2 container">
+    </div>  
+    <div class="ticket text-center mt-2 container ancho">
         <p class="small mb-1">VENTA</p>
         <h1 class="">VALOR DE TICKET $200</h1>
         <form>
@@ -73,11 +75,11 @@
                 </div>
             </div>
             <div class="row ubico mt-3">
-                <div class="col-12">
+                <div class="col-12 col-lg-6">
                     <label class="pb-2">Cantidad</label>
                     <input id="cant" type="number" class="form-control cant" placeholder="cantidad" name="cant">
                 </div>
-                <div class="col-12 pt-2">
+                <div class="col-12 col-lg-6">
                     <label class="pb-2">Categoria</label>
                     <select id="catego" class="form-select">
                         <option>Estudiante</option>
@@ -90,7 +92,7 @@
             <p id="msjFinal" class="precio">Total a Pagar: $</p>
             
         </form>
-        <div class="row container">
+        <div class="row container mx-0 px-0">
             <div class="col-6">
                 <input type="reset" class="btn boton-verde text-white mb-3" value="Borrar">
             </div>

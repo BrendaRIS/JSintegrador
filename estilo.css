@@ -41,7 +41,7 @@
 
 .boton-verde {
     background-color: rgb(150, 201, 62);
-    max-width: 700px;
+    max-width: 1200px;
     width: 100%;
 }
 
@@ -51,4 +51,9 @@
 
 .col-lg-1 {
     width: 120px;
+}
+
+.ancho {
+    max-width: 900px;
+    width: 100%;
 }
