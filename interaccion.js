@@ -1,7 +1,8 @@
-const cant = document.getElementById("cant").value;
+const cant = document.getElementById("cant");
 const categoria = document.getElementById("catego");
 let descuento;
 let monto=0;
+let total;
 
 
 function descuentoAsignado() {
@@ -16,8 +17,13 @@ function descuentoAsignado() {
 }
 
 function montoFinal() {
-    monto = 200 - 200 * descuentoAsignado()
-    document.getElementById("msjFinal").innerHTML =`Total a Pagar:$ ${monto}`;
+    if(cant.value <= 0){
+        document.getElementById("msjFinal").innerHTML =`Ingresar cantidad mayor a 0.`;
+    } else {
+        monto = 200 - 200 * descuentoAsignado()
+        total = monto * cant.value
+        document.getElementById("msjFinal").innerHTML =`Total a Pagar:$ ${total}`;
+    }
 }
 
 document.getElementById("myBtn").onclick = montoFinal;
